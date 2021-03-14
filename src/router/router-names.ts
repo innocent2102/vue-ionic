@@ -1,3 +1,4 @@
 export enum RouterName {
-  HOME = 'home'
+  HOME = 'home',
+  CAMERA = 'camera'
 }
