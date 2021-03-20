@@ -18,11 +18,13 @@
 </template>
 
 <script lang="ts">
+import { Options, Vue } from 'vue-class-component';
 import { IonPage, IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/vue';
 import ExploreContainer from '@/components/ExploreContainer.vue';
 
-export default  {
-  name: 'Home',
-  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage }
-}
+@Options({
+  components: { ExploreContainer, IonHeader, IonToolbar, IonTitle, IonContent, IonPage },
+})
+export default class Home extends Vue {}
+
 </script>
